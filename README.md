@@ -1,2 +1,2 @@
 # leetcode-study
-Leetcode study from hojin.
+Leetcode study from better future.
