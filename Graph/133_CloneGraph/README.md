@@ -8,15 +8,16 @@
 ## 💡 Idea / Intuition
 * Traversal the given graph and make a copy (BFS/DFS)
 
-## 📝 Approach (BFS)
+## 📝 Approach (BFS/DFS)
 1. **Edge Case** If the input in `None` return `None`
 2. **Initialization:** 
     * Create a dictionary `copied_graph` to act as the **Lookup Table**.
         * Key : address to the given Node
         * Value : new address to the cloned Node
-    * Create a deque for BFS search initalized to the starting node
+    * BFS : Create a deque for BFS search initalized to the starting node (queue)
+    * DFS : Create a deque for DFS search initalized to the starting node (stack)
 3. **Traversal**
-    * While the queue is non-empty pop the front *original* node
+    * While the queue/stack is non-empty pop the front *original* node
     * Iterate through node neighbor
         * if the neighbor not cloned before, clone and add it to `copied_graph`
         * append the cloned neighbor node to the current node's neighbor list 
