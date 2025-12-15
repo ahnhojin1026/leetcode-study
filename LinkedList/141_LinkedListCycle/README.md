@@ -12,7 +12,7 @@ We need to determine if a linked list has a cycle without using extra memory (i.
 3. **Logic:**
     * If there is **no cycle**, the Fast pointer will reach the end (`None`) first.
     * If there is **a cycle**, the Fast pointer will eventually enter the cycle and "lap" (catch up to) the Slow pointer from behind. 
-        * We can proof that two pointer will meet without jumping each other by relative velocity is **one edge at a time**
+        * We can prove that two pointer will meet without jumping each other by relative velocity is **1 step for iteration**
 
 > Initial approach was to traverse through the linked list while tracking visted nodes using a `HashSet` ($O(N)$ space)
 
